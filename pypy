@@ -1,0 +1,122 @@
+"""
+#1 feladat - kisebb.py
+szam1 = int(input("Adj meg egy számot! "))
+szam2 = int(input("Adj meg egy másik számot! "))
+
+if szam1 > szam2 :
+    print(f"A kisebb érték : {szam2} ")
+if szam1 < szam2 :
+    print(f"A kisebb érték: {szam1} ")
+if szam1 == szam2 :
+    print(f"A két szám egyenlő")
+    
+    """
+"""
+#2 feladat - jelszo.py
+    
+usname = "tesztelek2021"
+passw = "Python<3"
+
+usern = input("Adja meg a felhasználónevét! ")
+pw = input("Adja meg a jelszavát! ")
+
+
+while usern != usname and pw != passw:
+    
+    print("belépés megtadva")
+    usern = input("Adja meg a felhasználónevét! ")
+    pw = input("Adja meg a jelszavát! ")
+else:
+    print("belépés engedélyezve")
+
+"""
+"""
+#3 feladat - erdemjegy.py
+  
+
+erdemjegy = int(input("Adja meg az érdemjegyet! "))
+
+if erdemjegy == 1 :
+    print("Az érdemjegy: Elégtelen. ")
+    
+elif erdemjegy == 2 :
+    print("Az érdemjegy: Elégséges. ")
+    
+elif erdemjegy == 3 :
+    print("Az érdemjegy: Közepes ")
+
+elif erdemjegy == 4 :
+    print("Az érdemjegy: Jó. ")
+
+elif erdemjegy == 5 :
+    print("Az érdemjegy: Jeles. ")
+
+else:
+    print("Rossz értéket adott meg! . ")
+"""
+  
+"""
+#4 feladat - parosak.py
+db = 0 
+for x in range(5):
+    szam = int(input("Adja meg a számot! "))
+    if szam %2 == 0:
+        db += 1
+
+print(f"A megadott 5 darab szám közül a páros számok darabszáma: {db} ")
+"""
+"""
+#5 feladat - medium - bevasarlas.py
+
+def bevasarlas():
+
+    lista = [ ]
+    db = 0 
+
+    for x in range(5):
+        ar = int(input("Kérem az élelmiszer árát: "))
+        lista.append(ar)
+    
+    for x in lista:
+        if x > 1000:
+            db += 1
+    print(f"A bevásárló listában 1000ft-nél drágább árucikk darabszáma: {db} ")
+
+bevasarlas()
+
+"""
+
+"""
+
+#6. feladat
+
+def iras(mondat) : 
+
+    if mondat[-1] == "." : 
+        return "A mondat kijelentő"
+    if mondat[-1] == "!" : 
+        return"A mondat felkiáltó/felszólitó/ohajtó "
+    if mondat[-1] == "?" :
+        return"A mondat kérdő"
+    
+print(iras("Az ég kék."))
+    
+    
+"""
+
+#7 feladat guru.py
+
+def pcguru():
+    lista = []
+
+    for x in range(5) : 
+        szam = int(input("Kérem a számitógép árát: "))
+        lista.append(szam)
+    db = 0
+    for x in lista:
+        if x < 250000 :
+            db += 1
+    print(f"Azok a számitógépek melyek 250000FT-nél olcsóbbak, darabszáma: 3 ")
+    
+pcguru()
+
